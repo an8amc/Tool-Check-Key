@@ -3,20 +3,6 @@ goto :begin >nul
 :begin
 cls
 @echo off&set local&color f3&title Tool Check Key Using Api Huyphung.com By : NguyenPhamAn-PepJimmy&cls&echo.
-echo off 
-echo Press 1: Check for update
-echo Press 2: Check Key
-choice /c:12 /n /m ">_"
-if errorlevel 1 goto check
-if errorlevel 2 goto key
-:check
-echo Dowloading...
-cd.
-powershell -command "& { (New-Object Net.WebClient).DownloadFile('https://codeload.github.com/an8amc/Tool-Check-Key/zip/master', ' Check-key.zip') }
-@echo Done!
-cls 
-goto begin
-:key
 echo Thank you for using tool "Check key". Please insert the key you want to check below.
 Set /p "key1=  - Your Key : "
 echo Checking key
